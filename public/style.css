@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat_section{
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.brand{
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.message_area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    align-items: center;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #fbfbfb;
+}
+
+.message{
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming{
+    background: #8f8be8;
+    color: #fff;
+    margin-right: auto;
+}
+.incoming h4{
+    left: 0;
+}
+
+.outgoing{
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+    border-radius: 10px 0 10px 10px;
+}
+
+.message h4{
+    position: absolute;
+    top: -13px;
+    right: 0;
+    color: #333;
+    font-size: 10px;
+    font-family: monospace;
+}
+
+.join_message{
+    font-size: 14px;
+    background: #abe6085d;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #000;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    margin: 0 0 20px 0;
+}
+
+.left_message{
+    font-size: 14px;
+    background: #ee4f1563;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #000;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    margin: 0 0 20px 0;
+}
